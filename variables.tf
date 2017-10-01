@@ -1,4 +1,5 @@
 variable "name" {
+  type        = "map"
   description = "The name given to the vpc"
   default     = {}
 }
