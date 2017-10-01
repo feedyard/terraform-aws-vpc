@@ -1,9 +1,8 @@
-variable "name" {}
-
-variable "cidr" {
-  description = "the CIDR block to use for the vpc. e.g., 10.0.0.0/16"
-  default     = {}
+variable "name" {
+  description = "Name given to vpc"
 }
+
+variable "cidr" {}
 
 variable "public_subnets" {
   description = "A list of public subnets inside the VPC."
