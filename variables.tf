@@ -1,69 +1,69 @@
 variable "name" {
-  description = "Name given to vpc"
+  description = "vpc name"
 }
 
 variable "cidr" {
-  description = "CIDR block to assign to the vpc. E.g., 10.0.0.0/16"
+  description = "cidr block to assign to the vpc. e.g., 10.0.0.0/16"
 }
 
 variable "public_subnets" {
-  description = "A list of public subnets inside the VPC."
+  description = "a list of public subnets in the vpc"
   default     = []
 }
 
 variable "private_subnets" {
-  description = "A list of private subnets inside the VPC."
+  description = "a list of private subnets in the vpc"
   default     = []
 }
 
 variable "database_subnets" {
   type        = "list"
-  description = "A list of database subnets"
+  description = "a list of database subnets in the vpc"
   default     = []
 }
 
 variable "elasticache_subnets" {
   type        = "list"
-  description = "A list of elasticache subnets"
+  description = "a list of elasticache subnets in the vpc"
   default     = []
 }
 
 variable "azs" {
-  description = "A list of availability zones in the region to map to the subnets specified"
+  description = "a list of availability zones in the region mapped to the subnets"
   default     = []
 }
 
 variable "enable_dns_hostnames" {
-  description = "should be true if you want to use private DNS within the VPC"
+  description = "should be true if you want to use private dns within the vpc"
   default     = false
 }
 
 variable "enable_dns_support" {
-  description = "should be true if you want to use private DNS within the VPC"
+  description = "should be true if you want to use private dns within the cpv"
   default     = false
 }
 
 variable "enable_nat_gateway" {
-  description = "should be true if you want to provision NAT Gateways for each of your private networks"
+  description = "should be true if you want to provision nat gateways for each of your private networks"
   default     = false
 }
 
 variable "map_public_ip_on_launch" {
-  description = "should be false if you do not want to auto-assign public IP on launch"
+  description = "should be false if you do not want to auto-assign public ip on launch"
   default     = true
 }
 
 variable "private_propagating_vgws" {
-  description = "A list of VGWs the private route table should propagate."
+  description = "a list of vgws the private route table should propagate"
   default     = []
 }
 
 variable "public_propagating_vgws" {
-  description = "A list of VGWs the public route table should propagate."
+  description = "A list of vgws the public route table should propagate"
   default     = []
 }
 
 variable "tags" {
-  description = "A map of tags to add to all resources"
+  description = "a map of tags to add to all resources"
   default     = {}
 }
