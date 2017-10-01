@@ -1,8 +1,4 @@
-variable "name" {
-  type        = "map"
-  description = "The name given to the vpc"
-  default     = {}
-}
+variable "name" {}
 
 variable "cidr" {
   description = "the CIDR block to use for the vpc. e.g., 10.0.0.0/16"
